@@ -15,7 +15,7 @@ function cocktailReducer(state, action) {
     case 'FETCH_ERROR':
       return { ...state, status: 'error', error: action.payload };
     default:
-      throw new Error(Ação desconhecida: ${action.type});
+      throw new Error(`Ação desconhecida: ${action.type}`);
   }
 }
 
